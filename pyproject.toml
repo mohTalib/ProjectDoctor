@@ -1,0 +1,27 @@
+# projectdoctor/pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "projectdoctor"
+version = "3.0.0"
+authors = [ { name="AI Assistant", email="assistant@example.com" } ]
+description = "A Python library to assess codebase health."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT License" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "click==8.1.7",
+    "radon==6.0.1",
+    "astroid==3.2.2",
+    "vulture==2.11"
+]
+
+[project.scripts]
+projectdoctor = "projectdoctor.cli:cli"
