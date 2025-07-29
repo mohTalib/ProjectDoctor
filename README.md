@@ -28,7 +28,7 @@ ProjectDoctor requires Python 3.8 or newer.
 
 1.  **Clone the repository (or download the source code):**
     ```bash
-    [git clone https://github.com/mohTalib/ProjectDoctor.git
+    git clone https://github.com/mohTalib/ProjectDoctor.git
     ```
     ```
     cd projectdoctor
